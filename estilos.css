@@ -11,7 +11,13 @@ li{
     color: white;
     
 }
+#menu i{
+    font-size: 30px;
+    padding-left: 1vh;
+}
 .iconos i{
+    padding: 0 2px;
+    padding-right: 2px;
     font-size: 25px;
 }
 nav{
@@ -19,8 +25,19 @@ nav{
     display: flex;
     width: 100%;
     height: 15vh;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background-image: linear-gradient(to right, #6a11cb 10%, #2575fc 40%,#6a11cb 50%);
     align-items: center;
+    animation: movimiento 3s linear  infinite;
+    background-size: 200% 600%;
+    
+}
+@keyframes movimiento{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
 }
 .toggle-btn{
     align-items: center;
@@ -28,9 +45,7 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-.iconos{
 
-}
 
 span i{
     
